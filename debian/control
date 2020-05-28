@@ -1,0 +1,15 @@
+Source: sommelier
+Section: x11
+Priority: optional
+Maintainer: David Reveman <reveman@chromium.org>
+Build-Depends: debhelper (>=9), libwayland-dev, libwayland-bin, libxcb-composite0-dev, pkg-config, libgbm-dev, libpixman-1-dev, libxkbcommon-dev
+Standards-Version: 3.9.8
+Homepage: http://www.chromium.org
+
+Package: sommelier
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Recommends: x11-xserver-utils
+Description: Nested Wayland compositor
+ Sommelier is a nested Wayland compositor with support for X11 forwarding.
